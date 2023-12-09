@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+body {
+  font-family: 'Indie Flower', cursive !important;
+  background: #eafda7;
+  /*CAPE HONEY*/
+  margin: 0px;
+  padding: 0px;
+}
+
+::selection {
+  background: transparent;
+}
+
+h4 {
+  font-size: 26px;
+  line-height: 1px;
+  font-family: 'Amatic SC', cursive !important;
+}
+
+.color1 {
+  color: #1BBC9B
+}
+
+/*MOUNTAIN MEADOW*/
+.color2 {
+  color: #C0392B
+    /*TALL POPPY*/
+}
+
+
+.card {
+  color: #013243;
+  /*SHERPA BLUE*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 500px;
+  background: #e0e1dc;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -50%) perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 20px 0 60px rgba(0, 0, 0, .5);
+  transition: 1s;
+}
+
+.card:hover {
+  transform: translate(-40%, -40%) perspective(2000px) rotate(15deg) scale(1.2);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, .5);
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #BAC1BA;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+
+.card:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 5px;
+  height: 100%;
+  background: #92A29C;
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+
+.card .imgBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-origin: left;
+  transition: .7s;
+}
+
+.card .bark {
+  position: absolute;
+  background: #e0e1dc;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .7s;
+}
+
+.card .imgBox img {
+  min-width: 20px;
+  max-height: 200px;
+  border-radius: 0 0 22px 10px;
+}
+
+
+.card:hover .imgBox {
+  transform: rotateY(-135deg);
+}
+
+.card:hover .bark {
+  opacity: 022;
+  transition: .6s;
+  box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
+}
+
+.card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 0 0 0 5px;
+  z-index: -1;
+  margin-top: 70px;
+}
+
+.card .details p {
+  font-size: 15px;
+  line-height: 5px;
+  transform: rotate(-10deg);
+  padding: 0 0 0 20px;
+}
+
+.card .details h4 {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+/* ............................my-editng........................................... */
+.imgBox {
+  overflow: hidden;
+  background-color: #b6b6b6a8;
+  color: white;
+}
+
+.p-tag {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+  position: absolute;
+}
+
+.p-tags {
+  margin-left: 10px;
+  margin-top: 0px;
+   font-size: 25px;
+  position: absolute;
+
+}
+
+.details a {
+  text-decoration: none;
+  margin-top: 20px;
+  /* border: 1px solid gray; */
+}
+
+.details .expertise {
+  margin-top: -15%;
+  margin-left: 40%;
+  /* margin-bottom: 50%; */
+  position: absolute;
+}
+
+.phool {
+  position: absolute;
+  margin-top: 80%;
+  margin-left: -10%;
+}
+
+.corner-border {
+  background-color: rgba(69, 220, 240, 0.685);
+  width: 30%;
+  height: 20%;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -70%;
+  margin-left: 80%;
+}
+
+.buttom {
+  background-color: rgba(69, 220, 240, 0.685);
+  width: 30%;
+  height: 20%;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 65%;
+  margin-left: -10%;
+}
+
+.details .website- {
+  color: #C0392B;
+}
+.imgBox .time2{
+  margin-left: 7rem;
+  margin-top: 3.3rem;
+  font-size: 1.5rem;
+}
+.imgBox .colors2024{
+  color: #C0392B;
+}
+/* ======================== responsive ====================== */
+@media(max-width: 710px) {
+  body {
+    background-color: #e2f574;
+    overflow: hidden;
+  }
+
+  body .card {
+    /* overflow-y: hidden; */
+    width: 360px;
+    height: 450px;
+  }
+
+  .card,
+  .imgBox {
+    width: 250px;
+    height: 400px;
+  }
+
+  .details .expertise {
+    margin-top: -30%;
+    font-size: 14px;
+  }
+
+  .details a {
+    font-size: small;
+    font-weight: 700;
+    margin-top: 10%;
+    position: absolute;
+  }
+
+  .color1 {
+    margin-top: 1%;
+    font-size: large;
+  }
+
+  .headers {
+    position: absolute;
+    margin-top: -13%;
+  }
+
+  .details p {
+    font-size: 2px;
+  }
+
+  .buttom {
+    margin-top: 83%;
+  }
+
+  .cover-img {
+    width: 55%;
+  }
+
+  .p-tag,
+  .p-tags {
+    font-size: larger;
+  }
+
+  .expertise h4 {
+    margin-top: 70px;
+    margin-left: 27px;
+    font-size: 20px;
+  }
+
+  .imgBox .corner-border {
+    margin-left: 18rem;
+    margin-top: -14rem;
+    /* position: relative; */
+    background-color: rgb(0, 255, 221)a(255, 0, 0, 0.719);
+  }
+
+  .imgBox .buttom {
+    margin-top: 11rem;
+    margin-left: -2.3rem;
+  }
+
+}
+
+@media(max-width: 500px) {
+  body .card {
+    width: 310px;
+    height: 490px;
+  }
+  .imgBox .corner-border{
+    margin-top: -13rem;
+    margin-left: 15rem;
+    background: #2ce4f1;
+  }
+  .imgBox .buttom{
+    margin-top: 15rem;
+    margin-left: -2rem;
+    background: #2ce4f1;
+  }
+  .details .cv-down,.project-link{
+    margin-left: 13px;
+  }
+}
